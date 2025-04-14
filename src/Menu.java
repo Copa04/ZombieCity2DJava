@@ -42,7 +42,7 @@ public class Menu {
 
     // === Actiuni
         MenuActions.setActions(frame, mainMenu, settingsPanel, startButton, loadButton, settingsButton, exitButton);
-        setPanelBackground(this, D:\,,,FAC DAVID\paoo\proiect\);
+        //setPanelBackground(this,);
         frame.setVisible(true);
     }
 }
