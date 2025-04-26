@@ -46,6 +46,7 @@ public class MenuActions {
         SettingsPanel.Control_Button.addActionListener(e -> {
            frame.remove(SettingsPanel);
            frame.add(contorl_settings_panel);
+
            frame.revalidate();
            frame.repaint();
         });

@@ -1,7 +1,7 @@
 import javax.swing.*;
 
-public class Sound_Settings extends JPanel {
-    public JButton backButton;
+public class Sound_Settings extends back_ground_image {
+    public Menu_Buttons backButton;
     JSlider MasterVolumeSlider;
     JSlider MusicVolumeSlider;
     JSlider CreaturesVolumeSlider;
@@ -22,9 +22,11 @@ public class Sound_Settings extends JPanel {
         musicVolumeLabel.setBounds(ct.SLIDER_X_START-200, ct.SLIDER_Y_START+2*ct.SLIDER_SPACING, 300, 20);
 
         //butoane
-        backButton = new JButton("Back to main menu");
-        backButton.setBounds(10, 10, 150, 30);
+        backButton = new Menu_Buttons("Back to main menu",Boolean.FALSE);
+        backButton.setBounds(10, 10, 300, 30);
 
+        //imag de fundal
+        back_ground_image img= new back_ground_image();
 
         //slidere
         MasterVolumeSlider= new JSlider(JSlider.HORIZONTAL, 0, ct.SLIDER_VOLUME_MAX, ct.SLIDER_VOLUME_INITIAL);
