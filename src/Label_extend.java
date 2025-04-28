@@ -10,6 +10,7 @@ public class Label_extend extends JLabel {
     public Label_extend(String text) {
         super(text);
         applyStyle();
+        //sapt10 test message
     }
 
     // Aplică stilul
