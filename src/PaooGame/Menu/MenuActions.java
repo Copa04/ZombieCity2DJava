@@ -23,7 +23,8 @@ public class MenuActions {
         settingsPanel.backButton.addActionListener(e -> {
             frame.remove(settingsPanel);
             frame.add(menu.panel);
-
+            frame.revalidate();
+            frame.repaint();
         });
     }
 
