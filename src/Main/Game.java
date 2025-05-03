@@ -1,25 +1,28 @@
 package Main;
 
+import PaooGame.Menu.Menu;
 import entities.Player;
-
+import PaooGame.Menu.*;
+import javax.swing.*;
 import java.awt.*;
 
 public class Game implements Runnable {
 
-    private GameWindow gameWindow;
-    private GamePanel gamePanel;
+    private jframe_init gameWindow;
+   // private GamePanel gamePanel;
+    public GamePanel gamePanel;
+    public Menu menu_joc;
     private Thread gameThread;
     private final int FPS_SET = 120;
     private final int UPS_SET = 200;
 
     private Player player;
-
+    //JFrame frame
     public Game() {
         initClasses();
-
         gamePanel = new GamePanel(this);
-        gameWindow = new GameWindow(gamePanel);
-
+     //   gameWindow = new GameWindow(gamePanel, frame);
+        menu_joc=new Menu(false);
 
 
         startGameLoop();

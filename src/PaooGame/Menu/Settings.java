@@ -7,7 +7,7 @@ public class Settings extends back_ground_image {
     public Menu_Buttons Sound_Button;
     public Menu_Buttons Control_Button;
 
-    public Settings(JFrame frame) {
+    public Settings() {
         this.setLayout(null);
         this.setBounds(0, 0, ct.FRAME_WIDTH, ct.FRAME_HEIGHT);
 
@@ -33,7 +33,7 @@ public class Settings extends back_ground_image {
         this.add(settingsLabel);
         this.add(backButton);
 
-        MenuActions.SetSoundActions(frame, this, sound_settings_panel, control_settings_pannel);
+        MenuActions.SetSoundActions(this, sound_settings_panel, control_settings_pannel);
 
     }
 }
