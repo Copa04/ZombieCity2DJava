@@ -22,7 +22,6 @@ public class GamePanel extends JPanel {
 
     private LevelManager levelManager; // Add LevelManager
     private Game game;
-
     public GamePanel(Game game) {
         this.game = game;
 

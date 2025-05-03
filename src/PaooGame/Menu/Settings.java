@@ -33,7 +33,7 @@ public class Settings extends back_ground_image {
         this.add(settingsLabel);
         this.add(backButton);
 
-        MenuActions.SetSoundActions(this, sound_settings_panel, control_settings_pannel);
+        //MenuActions.SetSoundActions(this, sound_settings_panel, control_settings_pannel);
 
     }
 }

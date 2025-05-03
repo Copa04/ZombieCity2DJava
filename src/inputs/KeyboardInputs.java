@@ -25,6 +25,7 @@ public class KeyboardInputs implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
+
             case KeyEvent.VK_W:
             case KeyEvent.VK_A:
                 gamePanel.getGame().getPlayer().setDirection(left);

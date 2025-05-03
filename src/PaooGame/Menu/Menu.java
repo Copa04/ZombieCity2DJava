@@ -1,11 +1,6 @@
 package PaooGame.Menu;
 
-import Main.Game;
-import Main.jframe_init;
-
 import javax.swing.*;
-
-import static Main.Main.frame;
 
 
 public class Menu {
@@ -15,7 +10,7 @@ public class Menu {
     Menu_Buttons startButton;
     Menu_Buttons loadButton;
     Menu_Buttons mainMenu;
-    back_ground_image img;
+
 
     public static JPanel panel;
 
@@ -41,7 +36,7 @@ public class Menu {
         // ???^
         // === Panou PaooGame.Menu.Settings ==
         Settings settingsPanel = new Settings();
-        MenuActions.setDefaultMenuActions(this, settingsPanel);
+       // MenuActions.setDefaultMenuActions(this, settingsPanel);
 
         panel.add(settingsButton);
         panel.add(exitButton);
@@ -50,11 +45,11 @@ public class Menu {
 
     public void meniu_principal_joc() {
 
-        Game newGame = new Game();
+
         panel = new FadedInBackground();
         panel.setBounds(0, 0, ct.FRAME_WIDTH, ct.FRAME_HEIGHT);
         panel.setLayout(null);
-        frame.add(panel);
+
         // Butoane Meniu Principal
         startButton = new Menu_Buttons("Start New Game", Boolean.TRUE);
         loadButton = new Menu_Buttons("Load Career", Boolean.TRUE);
@@ -66,13 +61,13 @@ public class Menu {
         // Adauga butoanele pe panoul principal
         panel.add(startButton);
         panel.add(loadButton);
-        MenuActions.setStartGameMenu(this, newGame);
+       // MenuActions.setStartGameMenu(this);
 
 
         // === Actiuni
         //  MenuActions.setActions(frame, mainMenu, settingsPanel, startButton, loadButton, settingsButton, exitButton);
         //setPanelBackground(this,);
-        frame.setVisible(true);
+
     }
 
     public void meniu_gameplay_joc() {
