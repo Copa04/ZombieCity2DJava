@@ -2,18 +2,9 @@ package Main;
 
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
-import levels.LevelManager;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Random;
-
-import static utils.Constants.Directions.*;
-import static utils.Constants.PlayerConstants.*;
 
 public class GamePanel extends JPanel {
 

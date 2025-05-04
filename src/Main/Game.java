@@ -1,6 +1,7 @@
 package Main;
 
 import entities.Player;
+import gamestates.Gamestate;
 
 import java.awt.*;
 
@@ -36,11 +37,32 @@ public class Game implements Runnable {
     }
 
     public void update(){
-        player.update();
+
+        switch(Gamestate.state)
+        {
+            case MENU:
+             //   menu.update();
+                break;
+            case PLAYING:
+                player.update();
+                break;
+            default:
+                break;
+        }
     }
 
     public void render(Graphics g) {
-        player.render(g);
+        switch(Gamestate.state)
+        {
+            case MENU:
+                //   menu.update();
+                break;
+            case PLAYING:
+                player.render();
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
